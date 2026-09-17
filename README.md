@@ -1,13 +1,20 @@
 # Claude Token Indicator
 
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6?logo=windows&logoColor=white)
+![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Dependencies](https://img.shields.io/badge/runtime%20deps-none-success)
+![Built with PyInstaller](https://img.shields.io/badge/build-PyInstaller-FFD343)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 A slim, always-on-top strip for Windows that shows your Claude **session (5h)**
 and **weekly (7d)** usage at a glance — the same numbers as the desktop app's
-**Settings → Plan usage limits** panel, pinned to the top of your screen next to
-your other tray/overlay indicators.
+**Settings → Plan usage limits** panel, pinned next to your other tray/overlay
+indicators.
 
-```
-Session ▓▓▓░░ 50% ⟳1h22m    Weekly ▓░░░░ 11% ⟳6d8h
-```
+![Screenshot of the indicator strip](assets/screenshot.png)
+
+> Session and Weekly usage as mini bars with percentages and reset countdowns;
+> hover for the ✕ quit button. *(Values above are illustrative.)*
 
 ## How it works
 
