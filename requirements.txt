@@ -1,0 +1,5 @@
+# Runtime: none — the app uses only the Python standard library
+# (urllib, tkinter, threading). Python 3.10+ required.
+
+# Dev / packaging only:
+#   pip install pyinstaller

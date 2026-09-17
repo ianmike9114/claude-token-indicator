@@ -1,0 +1,16 @@
+# Build artifacts
+build_dist/
+build_work/
+dist/
+build/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+
+# User-local runtime config (position/offsets)
+config.json
+
+# Never commit credentials
+.credentials.json
