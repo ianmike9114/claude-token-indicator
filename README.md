@@ -14,7 +14,7 @@ indicators.
 ![Screenshot of the indicator strip](assets/screenshot.png)
 
 > Session and Weekly usage as mini bars with percentages and reset countdowns;
-> hover for the ✕ quit button. *(Values above are illustrative.)*
+> hover for the ✕ quit button. *(Real capture of the running strip.)*
 
 ## How it works
 
