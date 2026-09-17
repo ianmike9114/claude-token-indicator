@@ -16,6 +16,10 @@ indicators.
 > Session and Weekly usage as mini bars with percentages and reset countdowns;
 > hover for the ✕ quit button. *(Real capture of the running strip.)*
 
+![Demo: hover and refresh](assets/demo.gif)
+
+> Hover reveals the ✕ quit button; double-click refreshes the numbers.
+
 ## How it works
 
 It reads the OAuth token that Claude Code already stores at
