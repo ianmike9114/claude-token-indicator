@@ -1,0 +1,24 @@
+#!/bin/sh
+# Pre-commit: syntax-check staged Python files with py_compile (stdlib).
+# Blocks the commit if any staged .py has a syntax error.
+# Enable once per clone:  git config core.hooksPath .githooks
+
+py=$(command -v python || command -v py) || {
+    echo "pre-commit: python not found on PATH; skipping check" >&2
+    exit 0
+}
+
+files=$(git diff --cached --name-only --diff-filter=ACM -- '*.py')
+[ -z "$files" ] && exit 0
+
+status=0
+for f in $files; do
+    [ -f "$f" ] || continue
+    if ! "$py" -m py_compile "$f"; then
+        echo "pre-commit: syntax error in $f" >&2
+        status=1
+    fi
+done
+
+[ "$status" -ne 0 ] && echo "pre-commit: commit blocked. Fix errors above." >&2
+exit $status
